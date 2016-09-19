@@ -1,13 +1,9 @@
-class Currency
-  def initialize(amount, currency_code)
-    @amount = amount
-    @currency_code = currency_code
+class CurrencyConverter
+  def initialize(code, conversion_rate)
+    @code = code
+    @conversion_rate
   end
-
-
-
 end
 
-dollars =  Currency.new(1, "usd")
-euro = Currency.new(1, "eur")
-yuan = Currency.new(1, "cyn")
+dollars = CurrencyConverter.new("USD", 1)
+euro = Currency.new("EUR", .89480)
