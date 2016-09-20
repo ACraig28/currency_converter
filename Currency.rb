@@ -3,7 +3,7 @@ class Currency
 
   def initialize(amount,code = nil)
     # if amount != amount.gsub(/[$]/, "")
-    #   @amount = amount.gsub(/[$]/, "")
+    #   @amount = amount.delete("$")
     #   @amount = amount.to_f
     #   @code = "USD"
     # elsif amount != amount.gsub(/[€]/, "")
